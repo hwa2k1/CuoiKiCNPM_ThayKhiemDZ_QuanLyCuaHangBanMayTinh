@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D0A8D41-5BC3-4433-8888-51B20008A97A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quanlybanmaytinh</RootNamespace>
+    <AssemblyName>Quanlybanmaytinh</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBH.Designer.cs">
+      <DependentUpon>FormBH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHT.Designer.cs">
+      <DependentUpon>FormHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKH.Designer.cs">
+      <DependentUpon>FormKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNV.Designer.cs">
+      <DependentUpon>FormNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPL.Designer.cs">
+      <DependentUpon>FormPL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLHD.Designer.cs">
+      <DependentUpon>FormQLHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSP.Designer.cs">
+      <DependentUpon>FormSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhuongThucSQL.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBH.resx">
+      <DependentUpon>FormBH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHT.resx">
+      <DependentUpon>FormHT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKH.resx">
+      <DependentUpon>FormKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNV.resx">
+      <DependentUpon>FormNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPL.resx">
+      <DependentUpon>FormPL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLHD.resx">
+      <DependentUpon>FormQLHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSP.resx">
+      <DependentUpon>FormSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\734833_apple_logo_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Shop-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Online-Shopping-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Groups-Meeting-Light-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\My-Computer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\people-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\system-settings-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Button-Turn-Off-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\add-1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\delete-1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\settings-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Black-Floppy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Close-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\Apps-Zoom-Out-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\peakpx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-2-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-12-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tai-nghe-bluetooth-kanen-k6-thumb-600x600.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Photos\User-group-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\switch-turn-off-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\people-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\addressbook-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bank-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\file-folder-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\arrow-next-3-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\arrow-refresh-3-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\find-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\camera-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\print-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bg_st.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\calendar-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\lock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\person-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dollar-stats-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\arrow-upload-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
